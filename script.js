@@ -1,4 +1,4 @@
-// maybe something with input then id
+// Current time in Military
 var currentTime = moment().format('HH');
 console.log(currentTime)
 
@@ -24,11 +24,6 @@ $(document).ready(function () {
             console.log(text)
        localStorage.setItem($(this).prev().attr("id"),text)
 
-        alert("IT HAS BEEN SAVED")
-
-
-        console.log($(this))
-
     });
 
 
@@ -51,65 +46,14 @@ $(document).ready(function () {
 
         };
 
-         var task = localStorage.getItem($("#"+currentId).val())
-         $(currentId).val(task);
-
+        $("#"+currentId).val(localStorage.getItem(currentId))
+        
     });
-})
-// 
+    
+    
+    $(".btn").on("click", function(){
+        localStorage.clear();
+    })
+    $(".saveBtn").addClass("fas fa-archive")
+});
 
-
-
-// var hourSlot = parseInt($(this).attr("id"));
-// console.log(hourSlot)
-// // Maybe a for loop
-//     function colorClock(){
-
-
-//     colorClock();   
-
-
-// })
-
-
-
-// $(".time-block").each(function(){
-// });
-// for(var i = 9; i < 18; i++){
-
-
-// };   
-
-
-// function saveTask(timeBlock, task){
-//     localStorage.setItem(timeBlock, task)};
-
-// if(currentTime = timeBlock){
-
-// }
-
-
-//task = "" is the input
-
-
-// var task = $(this).text(".description");
-
-
-
-// task = localStorage.getItem(timeBlock[i])
-// $(".description").append(task);
-//         saveTask();
-
-// var task = $(this).siblings(".description").val();
-
-
-    // renderText();
-    // function renderText() {
-
-    //     var allTasks = localStorage.getItem('userText');
-
-    //     if (!allTasks) {
-    //         return
-    //     }
-    //     $(".description").text(allTasks)
-    // }
