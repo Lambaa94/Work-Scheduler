@@ -21,8 +21,8 @@ $(document).ready(function () {
         event.preventDefault();
 
         var text = $(this).prev().val();
-            console.log(text)
-       localStorage.setItem($(this).prev().attr("id"),text)
+        console.log(text)
+        localStorage.setItem($(this).prev().attr("id"), text)
 
     });
 
@@ -46,12 +46,12 @@ $(document).ready(function () {
 
         };
 
-        $("#"+currentId).val(localStorage.getItem(currentId))
-        
+        $("#" + currentId).val(localStorage.getItem(currentId))
+
     });
-    
-    
-    $(".btn").on("click", function(){
+
+
+    $(".btn").on("click", function () {
         localStorage.clear();
     })
     $(".saveBtn").addClass("fas fa-archive")
