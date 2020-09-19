@@ -16,6 +16,10 @@ I started off this assignment with hard coding in my blocks of time. I could hav
 
 **https://lambaa94.github.io/Work-Scheduler/**
 
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Credits
 
 * *https://bootswatch.com* 
